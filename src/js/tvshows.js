@@ -32,7 +32,7 @@ function renderTvshows(array, cards) {
         array.forEach(item => {
             item.name.length > 16 ? item.name = item.name.slice(0, 15) + "..." : item.title
             cards.innerHTML += `
-                <a href="./detail.html" class="card" onclick="idDetail(${item.id})">
+                <div class="card" onclick="idDetail(${item.id})">
                     <div class="card-img">
                     <img src="https://www.themoviedb.org/t/p/w500/${item.poster_path || item.backdrop_path}" alt="">
                     </div>
@@ -44,7 +44,7 @@ function renderTvshows(array, cards) {
                     </div>
                     <div class="card-year">${item.first_air_date.slice(0,4)}</div>
                     </div>
-                </a>
+                </div>
             `
             
         })
