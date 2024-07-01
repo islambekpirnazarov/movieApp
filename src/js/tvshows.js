@@ -39,7 +39,7 @@ function renderTvshows(array, cards) {
                     <div class="card-title">${item.name}</div>
                     <div class="card-info">
                     <div class="card-rating">
-                        <img src="../images/star.png" alt="">
+                        <img src="src/images/star.png" alt="">
                         ${item.vote_average.toFixed(1)}
                     </div>
                     <div class="card-year">${item.first_air_date.slice(0,4)}</div>
