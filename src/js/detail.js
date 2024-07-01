@@ -64,7 +64,7 @@ function renderMovieId(object) {
             <div class="detail-title">${object.title}</div>
             <div class="detail-info">
             <div class="detail-rating">
-                <img src="../images/star.png" alt="">
+                <img src="src/images/star.png" alt="">
                 ${object.vote_average.toFixed(1)}
             </div>
           <div class="detail-continuity">${object.runtime}min</div>
@@ -110,7 +110,7 @@ function renderSimilar(array) {
                 <div class="card-title">${item.title}</div>
                 <div class="card-info">
                 <div class="card-rating">
-                    <img src="../images/star.png" alt="">
+                    <img src="src/images/star.png" alt="">
                     ${item.vote_average.toFixed(1)}
                 </div>
                 <div class="card-year">${item.release_date.slice(0,4)}</div>

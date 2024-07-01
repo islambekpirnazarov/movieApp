@@ -1,7 +1,6 @@
 import '../css/style.css'
 import { requestMoviesTheBest } from './api'
 import { requestTrendingMovies } from './api'
-import { requestGenresList } from './api'
 
 window.idDetail = idDetail
 const bannerSliderItems = document.querySelector('#banner-slider__items')
@@ -81,7 +80,7 @@ function renderTrendingMovies(array) {
                     <div class="slider-item__desc">${item.overview}</div>
                     <div>
                         <a href="./detail.html" class="btn btn-solid" onclick="idDetail(${item.id})">
-                            <img src="../images/play_circle.png" alt="">
+                            <img src="./src/images/play_circle.png" alt="">
                             Watch Now
                         </a>
                     </div>
