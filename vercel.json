@@ -1,6 +1,11 @@
 {
-    "routes": [
-      { "handle": "filesystem" },
-      { "src": "/(.*)", "dest": "/$1" }
+    "rewrites": [
+      { "source": "/index.html", "destination": "/index.html" },
+      { "source": "/categories.html", "destination": "/categories.html" },
+      { "source": "/detail.html", "destination": "/detail.html" },
+      { "source": "/tvshows.html", "destination": "/tvshows.html" },
+      { "source": "/images/(.*)", "destination": "/images/$1" },
+      { "source": "/css/(.*)", "destination": "/css/$1" },
+      { "source": "/js/(.*)", "destination": "/js/$1" }
     ]
   }
