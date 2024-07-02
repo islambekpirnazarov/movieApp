@@ -4,6 +4,7 @@
       { "source": "/categories.html", "destination": "/categories.html" },
       { "source": "/detail.html", "destination": "/detail.html" },
       { "source": "/tvshows.html", "destination": "/tvshows.html" },
+      { "source": "/search.html", "destination": "/search.html" },
       { "source": "/images/(.*)", "destination": "/images/$1" },
       { "source": "/css/(.*)", "destination": "/css/$1" },
       { "source": "/js/(.*)", "destination": "/js/$1" }
