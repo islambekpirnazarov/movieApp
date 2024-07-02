@@ -30,7 +30,7 @@ function renderSearchMovies(array) {
             item.title.length > 16 ? item.title = item.title.slice(0, 15) + "..." : item.title
             cardsSearch.innerHTML += `
             
-            <a href="detail/detail.html" class="card card-genre" onclick="idDetail(${item.id})">
+            <a href="../detail/detail.html" class="card card-genre" onclick="idDetail(${item.id})">
                 <div class="card-img">
                     <img src="https://www.themoviedb.org/t/p/w500/${item.poster_path}" alt="">
                 </div>
