@@ -45,7 +45,7 @@ function renderTheBestMovies(array, cards) {
                     <div class="card-title">${item.title}</div>
                     <div class="card-info">
                     <div class="card-rating">
-                        <img src="./src/images/star.png" alt="">
+                        <img src="../src/images/star.png" alt="">
                         ${item.vote_average.toFixed(1)}
                     </div>
                     <div class="card-year">${item.release_date.slice(0,4)}</div>
@@ -79,8 +79,8 @@ function renderTrendingMovies(array) {
                     </div>
                     <div class="slider-item__desc">${item.overview}</div>
                     <div>
-                        <a href="./detail.html" class="btn btn-solid" onclick="idDetail(${item.id})">
-                            <img src="./src/images/play_circle.png" alt="">
+                        <a href="detail/detail.html" class="btn btn-solid" onclick="idDetail(${item.id})">
+                            <img src="../src/images/play_circle.png" alt="">
                             Watch Now
                         </a>
                     </div>
