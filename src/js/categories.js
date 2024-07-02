@@ -23,7 +23,7 @@ function renderCardsGenres(array) {
       item.title.length > 16 ? item.title = item.title.slice(0, 15) + "..." : item.title
       cardsGenres.innerHTML += `
             
-            <a href="./detail.html" class="card card-genre" onclick="idDetail(${item.id})">
+            <a href="detail/detail.html" class="card card-genre" onclick="idDetail(${item.id})">
                 <div class="card-img">
                     <img src="https://www.themoviedb.org/t/p/w500/${item.poster_path || item.backdrop_path}" alt="">
                 </div>
