@@ -54,8 +54,9 @@ function renderGenresList(array) {
 }
 let itemId = 28;
 function cardGenresClick(id) {
+  const genre = document.querySelector('.genre')
+  genre.classList.add('active')
   cardsGenres.innerHTML = ''
-  console.log(itemId);
   currentPage = 1;
   itemId = id
   genresMovies(id, currentPage)
@@ -65,7 +66,6 @@ function cardGenresClick(id) {
 }
 loadMore.addEventListener('click', () => {
   currentPage++;
-  console.log(itemId);
   genresMovies(itemId, currentPage)
     .then(data => renderCardsGenres(data.results))
     .catch(err => console.log(err.message))
