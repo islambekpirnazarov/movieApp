@@ -1,7 +1,7 @@
 // vite.config.js
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
-
+import compression from 'vite-plugin-compression'
 
 export default defineConfig({
   build: {
@@ -15,4 +15,5 @@ export default defineConfig({
       },
     },
   },
+  plugins : [compression()]
 })

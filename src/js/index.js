@@ -40,12 +40,12 @@ function renderTheBestMovies(array, cards) {
             cards.innerHTML += `
                 <a href="detail/detail.html" class="card" onclick='idDetail(${item.id})'">
                     <div class="card-img">
-                    <img src="https://www.themoviedb.org/t/p/w500/${item.poster_path || item.backdrop_path}" alt="">
+                    <img src="https://www.themoviedb.org/t/p/w342/${item.poster_path || item.backdrop_path}" alt="">
                     </div>
                     <div class="card-title">${item.title}</div>
                     <div class="card-info">
                     <div class="card-rating">
-                        <img src="src/images/star.png" alt="">
+                        <i class='bx bxs-star' class="star" ></i>
                         ${item.vote_average.toFixed(1)}
                     </div>
                     <div class="card-year">${item.release_date.slice(0,4)}</div>
@@ -74,13 +74,11 @@ function renderTrendingMovies(array) {
                         <div class="slider-item__year">${item.release_date.slice(0,4)}</div>
                         <div class="slider-item__rating">${item.vote_average.toFixed(1)}</div>
                     </div>
-                    <div class="slider-item__genres">
-                         
-                    </div>
+                    
                     <div class="slider-item__desc">${item.overview}</div>
                     <div>
                         <a href="detail/detail.html" class="btn btn-solid" onclick="idDetail(${item.id})">
-                            <img src="src/images/play_circle.png" alt="">
+                            <i class='bx bx-play-circle'></i>
                             Watch Now
                         </a>
                     </div>

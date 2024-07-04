@@ -357,6 +357,9 @@ main{
   cursor: pointer;
   max-width: 180px;
 }
+.btn-solid i{
+  font-size: 21px;
+}
 .btn-solid:hover{
   background-color: var(--primary-variant);
 }
@@ -430,14 +433,15 @@ main{
   display: flex;
   align-items: center;
 }
-.card .card-info .card-rating img{
-  width: 18px;
-}
+
 .card .card-year{
   background-color: var(--white-alpha-20);
   border-radius: 5px;
   font-weight: 600;
   padding: 2px 7px;
+}
+.card-rating i, .detail-rating i{
+  color: #ffd250;
 }
 /* MOVIE LIST END */
 
@@ -648,6 +652,14 @@ main{
   }
 }
 @media screen and (max-width : 500px) {
+  .header-content{
+    height: 70px;
+  }
+  main{
+    min-height: (100vh - 70px);
+    max-height: (100vh - 70px);
+    padding-top: 70px;
+  }
   .banner-slider__items{
     max-height: 500px;
     height: auto;
@@ -684,5 +696,9 @@ main{
   }
   .sidebar ul li a {
     font-size: 14px;
+  }
+  iframe{
+    width: 300px;
+    height: 215px;
   }
 }

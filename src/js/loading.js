@@ -11,6 +11,12 @@ export const loadingMovies = (loading) => {
                         <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                         </div
                     </div>
+                    <div class="card-title"></div>
+                    <div class="card-info">
+                    <div class="card-rating">
+                    </div>
+                    <div class="card-year"></div>
+                    </div>
                 </div>
             `
         })

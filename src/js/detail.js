@@ -64,13 +64,13 @@ function renderMovieId(object) {
             <div class="detail-title">${object.title}</div>
             <div class="detail-info">
             <div class="detail-rating">
-                <img src="src/images/star.png" alt="">
+                <i class='bx bxs-star' class="star" ></i>
                 ${object.vote_average.toFixed(1)}
             </div>
           <div class="detail-continuity">${object.runtime}min</div>
           <div class="detail-date">${object.release_date.slice(0,4)}</div>
         </div>
-        <div class="detail-genres">${object.genres.map(item => item.name)}</div>
+        <div class="detail-genres">${object.genres.map(item => "  " + item.name)}</div>
         <div class="detail-desc">
           ${object.overview}
         </div>
@@ -86,7 +86,7 @@ function renderCreditsData(object) {
     credits.innerHTML = `
     <div class="detail-actors">
     <div class="detail-starring">Starring</div>
-    <div class="detail-starring__name">${object.cast.map(item => item.name)}
+    <div class="detail-starring__name">${object.cast.map(item => " " +  item.name)}
     </div>
     </div>
     <div class="detail-director">
@@ -110,7 +110,7 @@ function renderSimilar(array) {
                 <div class="card-title">${item.title}</div>
                 <div class="card-info">
                 <div class="card-rating">
-                    <img src="../src/images/star.png" alt="">
+                    <i class='bx bxs-star' class="star" ></i>
                     ${item.vote_average.toFixed(1)}
                 </div>
                 <div class="card-year">${item.release_date.slice(0,4)}</div>
@@ -126,12 +126,12 @@ const clips = document.querySelector('#clips')
 function renderVideos(array) {
     if(array) {
         clips.innerHTML = ''
+        array = array.slice(0, 10)
         array.map(item => {
             clips.innerHTML += `
              <div>
               <iframe src="https://www.youtube.com/embed/${item.key}" frameborder="0" width="400" height="254"></iframe>
-            </div> 
-            
+            </div>
             `
         })
     }
